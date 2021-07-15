@@ -1,0 +1,15 @@
+function foo() {
+  console.log( "foo" );
+}
+
+var someFoo = foo;	// variable reference to `foo`
+
+var myObject = {
+  aProperty: foo
+};
+
+foo; // function foo(){..}
+
+someFoo; // function foo(){..}
+
+myObject.aProperty;	// function foo(){..}
